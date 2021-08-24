@@ -22,7 +22,9 @@ python category_filter.py --input_json path\to\annotations\instances_train2017.j
    <p align="center"> <img src='readme/coco2.png' align="center" height="230px"> 
     
 # Changes made for testing   
-3. Edit the test.py as the following image   
+3. Edit the test.py as the following images   
+   <p align="center"> <img src='readme/prefetch_test.png' align="center" height="230px">
+   <p align="center"> <img src='readme/test.png' align="center" height="230px">   
 4. Edited the hardnet.py - while testing (no need to edit the hardnet.py while training)
    figure below shows where to edit hardnet.py while testing
    <p align="center"> <img src='readme/hard_posttraining.png' align="center" height="230px"> 
