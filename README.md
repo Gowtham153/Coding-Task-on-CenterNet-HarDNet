@@ -1,7 +1,31 @@
 # Objects as Points + HarDNet:
-Task: Train the model for 3 categories: 1) person 2) Animals - cat, dog 3) Vehicles - car, truck
+Task: Train the model for 3 categories: 1) person 2) Animals - cat,dog 3) Vehicles - car,truck
 There are two ways to select the category:
-1. Collect the 
+1. Collect the cat, dog under animal and car, truck under vehicle dataset. create a json file accordingly.
+2. Collect the coco dataset for person, car, truck, cat, dog as 1,2,3,4,5 labels and output the 2,3 as vehicles and 4,5 as animals after training.
+
+# Filtering required categories from json file 
+
+The following command will filter the input instances json to only include images and annotations for the categories person, dog, cat, car or truck: ~~~python filter.py --input_json c:\users\you\annotations\instances_train2017.json --output_json path\to\annotations\filtered.json --categories person dog cat truck ~~~
+
+
+## Training on Windows
+
+We have packed all the training scripts in the [experiments](../experiments) folder.
+
+~~~
+python main.py ctdet --exp_id coco_h68 --arch hardnet_68 --batch_size 6 --master_batch 3 --lr 1e-2 --gpus 0 --num_workers 0 --num_epochs 300 --lr_step 230,280
+~~~
+
+To evaluate COCO object detection with HarDNet-85
+run
+
+~~~
+python test.py ctdet --exp_id coco_h68 --arch hardnet_68 --load_model \path\to\checkpoint.pth
+~~~
+
+
+Selecting option 2 seemed better for me because: It trains on cat and dog separately with better, high level features and finally labelling cat and dog as animal. Same goes with the car, truck. There won't be much hyperparameters change between option 1 and option 2. So I choose option 2.
 # Making the dataset 
 ![](readme/fig2.png)
 > [**Objects as Points**](http://arxiv.org/abs/1904.07850)
