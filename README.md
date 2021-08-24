@@ -18,7 +18,7 @@ The json file created looks like the annotations below.
 # Changes made for training
 1. Edited the coco.py, 
    Figure below shows how to edit the coco.py
-   <p align="center"> <img src='readme/coco1.png' align="center" height="230px" > </p>
+   <p align="center"> <img src='readme/det1.png' align="center" height="230px" > </p>
    <p align="center"> <img src='readme/coco2.png' align="center" height="230px"> 
     
 # Changes made for testing   
