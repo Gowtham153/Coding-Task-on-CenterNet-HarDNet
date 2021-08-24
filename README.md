@@ -1,4 +1,4 @@
-# Objects as Points + HarDNet:
+# Objects as Points + HarDNet: (Ran using windows)
 Task: Train the model for 3 categories: 1) person 2) Vehiclels - car,truck 3) Vehicles - cat,dog
 Selecting the category:
 1. Collect the person, car, truck, dog, cat as categories person, vehicle and animal. with person as category 1, vehicle as category 2 and animal as category 
@@ -17,17 +17,12 @@ The json file created looks like the annotations below.
 
 # Changes made for training
 1. Edited the coco.py, 
-   Figure below shows how to edit the coco.py
-   <p align="center"> <img src='readme/coco1.png' align="center" height="44px" width="724" > </p>
-   <p align="center"> <img src='readme/coco2.png' align="center" height="230px"> 
     
 # Changes made for testing   
 3. Edit the test.py as the following images   
-   <p align="center"> <img src='readme/prefetch_test.png' align="center" height="230px">
-   <p align="center"> <img src='readme/test.png' align="center" height="230px">   
+   edited spilt = 'test' in the prefetch_test. Since i am not using parallel computation . 
 4. Edited the hardnet.py - while testing (no need to edit the hardnet.py while training)
-   figure below shows where to edit hardnet.py while testing
-   <p align="center"> <img src='readme/hard_posttraining.png' align="center" height="230px"> 
+   Uncomment torch.no_grad() while testing.
 
 
 
