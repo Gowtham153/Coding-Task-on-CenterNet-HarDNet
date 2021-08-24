@@ -16,10 +16,10 @@ The json file created looks like the annotations below.
 "categories": [{"supercategory": "person", "id": 1, "name": "person"}, {"supercategory": "vehicle", "id": 2, "name": "car"}, {"supercategory": "vehicle", "id": 2, "name": "truck"}, {"supercategory": "animal", "id": 3, "name": "cat"}, {"supercategory": "animal", "id": 3, "name": "dog"}]
 
 # Changes made for training
-1. Edited the coco.py, 
-    
+1. Edited the coco.py
+
 # Changes made for testing   
-3. Edit the test.py as the following images   
+3. Edit the test.py as the following:  
    edited spilt = 'test' in the prefetch_test. Since i am not using parallel computation . 
 4. Edited the hardnet.py - while testing (no need to edit the hardnet.py while training)
    Uncomment torch.no_grad() while testing.
