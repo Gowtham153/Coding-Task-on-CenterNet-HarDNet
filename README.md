@@ -6,7 +6,8 @@ There are two ways to select the category:
 
 # Filtering required categories from json file 
 
-The following command will filter the input instances json to only include images and annotations for the categories person, dog, cat, car or truck: ~~~python filter.py --input_json c:\users\you\annotations\instances_train2017.json --output_json path\to\annotations\filtered.json --categories person dog cat truck ~~~
+The following command will filter the input instances json to only include images and annotations for the categories person, dog, cat, car or truck: 
+~~~python filter.py --input_json c:\users\you\annotations\instances_train2017.json --output_json path\to\annotations\filtered.json --categories person dog cat truck ~~~
 
 
 ## Training on Windows
