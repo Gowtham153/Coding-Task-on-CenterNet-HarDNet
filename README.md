@@ -18,7 +18,7 @@ python category_filter.py --input_json path\to\annotations\instances_train2017.j
 1. Added category_filter.py to the annotation folder
 2. Edited the coco.py, 
    Figure below shows how to edit the coco.py
-   <p align="center"> <img src='readme/coco1.png' align="center" height="100px" width= "600px"> 
+   <p align="center"> <img src='readme/coco1.png' align="center" height="50px" width= "700px"> 
    <p align="center"> <img src='readme/coco2.png' align="center" height="230px"> 
     
 # Changes made for testing   
