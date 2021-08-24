@@ -1,11 +1,9 @@
 # Objects as Points + HarDNet:
 Task: Train the model for 3 categories: 1) person 2) Vehiclels - car,truck 3) Vehicles - cat,dog
-There are two ways to select the category:
+Selecting the category:
 1. Collect the person, car, truck, dog, cat as categories person, vehicle and animal. with person as category 1, vehicle as category 2 and animal as category 
-2. created a json file accordingly.
-3. The json file created looks like the annotations below.
+2. create a json file accordingly.
 
-"categories": [{"supercategory": "person", "id": 1, "name": "person"}, {"supercategory": "vehicle", "id": 2, "name": "car"}, {"supercategory": "vehicle", "id": 2, "name": "truck"}, {"supercategory": "animal", "id": 3, "name": "cat"}, {"supercategory": "animal", "id": 3, "name": "dog"}]
 
 # Filtering categories for custom dataset from json file 
 
@@ -13,6 +11,9 @@ The following command will filter the input instances json to only include image
 ~~~
 python category_filter.py --input_json path\to\annotations\instances_train2017.json --output_json path\to\annotations\percartruckdogcat.json --categories person car truck dog cat
 ~~~
+The json file created looks like the annotations below.
+
+"categories": [{"supercategory": "person", "id": 1, "name": "person"}, {"supercategory": "vehicle", "id": 2, "name": "car"}, {"supercategory": "vehicle", "id": 2, "name": "truck"}, {"supercategory": "animal", "id": 3, "name": "cat"}, {"supercategory": "animal", "id": 3, "name": "dog"}]
 
 # Changes made for training
 1. Edited the coco.py, 
