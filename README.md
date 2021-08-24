@@ -2,7 +2,8 @@
 Task: Train the model for 3 categories: 1) person 2) Vehiclels - car,truck 3) Vehicles - cat,dog
 There are two ways to select the category:
 1. Collect the cat, dog under animal and car, truck under vehicle dataset. create a json file accordingly.
-2. Collect the coco dataset for person, car, truck, cat, dog as 1,2,3,4,5 labels and output the 2,3 as vehicles and 4,5 as animals after training.
+
+"categories": [{"supercategory": "person", "id": 1, "name": "person"}, {"supercategory": "vehicle", "id": 2, "name": "car"}, {"supercategory": "vehicle", "id": 2, "name": "truck"}, {"supercategory": "animal", "id": 3, "name": "cat"}, {"supercategory": "animal", "id": 3, "name": "dog"}]
 
 # Filtering categories for custom dataset from json file 
 
