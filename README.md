@@ -1,5 +1,5 @@
 # Objects as Points + HarDNet:
-Task: Train the model for 3 categories: 1) person 2) Animals - cat,dog 3) Vehicles - car,truck
+Task: Train the model for 3 categories: 1) person 2) Vehiclels - car,truck 3) Vehicles - cat,dog
 There are two ways to select the category:
 1. Collect the cat, dog under animal and car, truck under vehicle dataset. create a json file accordingly.
 2. Collect the coco dataset for person, car, truck, cat, dog as 1,2,3,4,5 labels and output the 2,3 as vehicles and 4,5 as animals after training.
