@@ -1,5 +1,8 @@
-# Objects as Points + HarDNet
-I ran using windows
+# Objects as Points + HarDNet:
+Task: Train the model for 3 categories: 1) person 2) Animals - cat, dog 3) Vehicles - car, truck
+There are two ways to select the category:
+1. Collect the 
+# Making the dataset 
 ![](readme/fig2.png)
 > [**Objects as Points**](http://arxiv.org/abs/1904.07850)
 
