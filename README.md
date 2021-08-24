@@ -4,12 +4,18 @@ There are two ways to select the category:
 1. Collect the cat, dog under animal and car, truck under vehicle dataset. create a json file accordingly.
 2. Collect the coco dataset for person, car, truck, cat, dog as 1,2,3,4,5 labels and output the 2,3 as vehicles and 4,5 as animals after training.
 
-# Filtering required categories from json file 
+# Filtering categories for custom dataset from json file 
 
-The following command will filter the input instances json to only include images and annotations for the categories person, dog, cat, car or truck: 
+The following command will filter the input instances json to only include images and annotations for the categories person, car, truck, cat and dog: 
 ~~~
-python filter.py --input_json c:\users\you\annotations\instances_train2017.json --output_json path\to\annotations\filtered.json --categories person dog cat truck 
+python category_filter.py --input_json path\to\annotations\instances_train2017.json --output_json path\to\annotations\percartruckcatdog.json --categories person car truck cat dog
 ~~~
+
+# Changes made 
+1. Added category_filter.py to the annotation folder
+2. Edited the coco.py 
+2. Edited the hardnet.py - while testing 
+
 
 
 ## Training on Windows
